@@ -37,6 +37,7 @@ body {
 	border-radius: 5px;
 	background: rebeccapurple;
 	color: #fff;
+	margin-inline: 0.4rem;
 	padding: 0.5rem 2rem;
 	cursor: pointer;
 }
