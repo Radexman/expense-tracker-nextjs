@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import { ClerkProvider } from '@clerk/nextjs';
 import { Roboto } from 'next/font/google';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import './globals.css';
 import Header from '@/components/Header';
@@ -29,6 +31,7 @@ export default function RootLayout({
 				<body>
 					<Header />
 					<main className='container'>{children}</main>
+					<ToastContainer />
 				</body>
 			</ClerkProvider>
 		</html>
