@@ -11,7 +11,7 @@ const Balance = async () => {
 	return (
 		<>
 			<h4>Your Balance</h4>
-			<h1>$ {formatAmount(result.balance)}</h1>
+			<h1>$ {formatAmount(Number(result.balance.toFixed(2)))}</h1>
 		</>
 	);
 };
